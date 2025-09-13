@@ -32,7 +32,7 @@ function App() {
 
               <div className="my-2 w-[80vw] bg-base-100  block p-2 rounded-md">
                 <input type="search" className="input" placeholder="Search" list="resources" />
-                <datalist id="search">
+                <datalist id="resources">
                   {resources.map((resource) => (
                     <option key={resource.Name} value={resource["Name"]} />
                   ))}
