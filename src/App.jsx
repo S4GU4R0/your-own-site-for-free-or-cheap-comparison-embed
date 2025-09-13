@@ -30,8 +30,13 @@ function App() {
               <span className="text-base-content ml-2"> 👺 = the rich.
               </span>
 
-              <div className="my-2 w-80vw bg-base-100  inline-block p-2 rounded-md">
-                test
+              <div className="my-2 w-[80vw] bg-base-100  block p-2 rounded-md">
+                <input type="text" className="input" placeholder="Which browser do you use" list="browsers" />
+                <datalist id="browsers">
+                  {resources.map((resource) => (
+                    <option key={resource.Name} value={resource.Name}></option>
+                  ))}
+                </datalist>
               </div>
             </div>
             <table className="table table-zebra table-pin-cols  bg-base-100 shadow-md mb-16">
