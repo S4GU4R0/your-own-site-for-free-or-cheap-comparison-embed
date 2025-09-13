@@ -31,17 +31,17 @@ function App() {
               </span>
 
               <div className="my-2 w-[80vw] bg-base-100  block p-2 rounded-md">
-                <input type="text" className="input" placeholder="Which browser do you use" list="browsers" />
-                <datalist id="browsers">
+                <input type="search" className="input" placeholder="Search" list="resources" />
+                <datalist id="search">
                   {resources.map((resource) => (
-                    <option key={resource.Name} value={resource.Name}></option>
+                    <option key={resource.Name} value={resource["Name"]} />
                   ))}
                 </datalist>
               </div>
             </div>
-            <table className="table table-zebra table-pin-cols  bg-base-100 shadow-md mb-16">
+            <table className="table table-zebra table-pin-cols  bg-base-100 shadow-md mb-16 rounded-t-md">
               <thead className="mt-2 rounded-t-md">
-                <tr className="" >
+                <tr className="rounded-t-md">
                   {
                     Object.keys(resources[0]).map((column) => {
                       return (
