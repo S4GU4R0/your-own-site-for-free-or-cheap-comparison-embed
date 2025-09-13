@@ -95,7 +95,7 @@ function App() {
                   <text text-anchor="middle" font-size="15" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" fill="#ffffff" x="118" y="50%" dy=".35em">COMRADE CIRCUITS</text>
                 </svg>
               </a>
-            </div>c
+            </div>
           </div>
         </div>
       </div>
